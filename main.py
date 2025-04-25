@@ -7,7 +7,7 @@ import pandas as pd
 db = Database()
 
 def get_share_url(share_link):
-    # Create the share URL using the current URL
+    # Create a simple share URL
     return f"?share={share_link}"
 
 def main():
