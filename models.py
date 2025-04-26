@@ -18,11 +18,10 @@ class Expense:
         }
 
 class Group:
-    def __init__(self, id, name, members, share_link=None):
+    def __init__(self, id, name, members):
         self.id = id
         self.name = name
         self.members = members
-        self.share_link = share_link
 
     def add_member(self, member):
         if member not in self.members:
@@ -36,6 +35,5 @@ class Group:
         return {
             'id': self.id,
             'name': self.name,
-            'members': self.members,
-            'share_link': self.share_link
+            'members': self.members
         } 
